@@ -1,0 +1,31 @@
+{
+  "$schema": "https://acode.app/schema/plugin/v0.1.0.json",
+  "id": "acode.markdown.allinone",
+  "name": "Markdown All in One",
+  "main": "main.js",
+  "version": "1.0.1",
+  "readme": "readme.md",
+  "changelogs": "changelogs.md",
+  "repository": "https://github.com/Chakszzz/acode-markdown-all-in-one",
+  "icon": "icon.png",
+  "files": [],
+  "minVersionCode": 1008,
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "toc",
+    "table",
+    "formatter",
+    "katex",
+    "math",
+    "gfm",
+    "codemirror"
+  ],
+  "price": 0,
+  "permissions": [],
+  "author": {
+    "name": "Er Rickow",
+    "email": "",
+    "github": "ErRickow"
+  }
+}

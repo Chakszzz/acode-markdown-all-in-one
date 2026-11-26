@@ -1,0 +1,48 @@
+{
+  "name": "acode-markdown-all-in-one",
+  "version": "1.0.1",
+  "description": "All you need to write Markdown in Acode (CodeMirror 6 + native Acode UI)",
+  "repository": "https://github.com/Chakszzz/acode-markdown-all-in-one",
+  "author": "Er Rickow",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "dependencies": {
+    "@neilsustc/markdown-it-katex": "^1.0.0",
+    "acode-plugin-types": "^1.12.9",
+    "entities": "^3.0.1",
+    "grapheme-splitter": "^1.0.4",
+    "highlight.js": "^11.10.0",
+    "html-tag-js": "^2.4.15",
+    "katex": "^0.16.11",
+    "markdown-it": "^13.0.2",
+    "markdown-it-github-alerts": "^0.1.2",
+    "markdown-it-task-lists": "^2.1.1",
+    "punycode": "^2.3.1",
+    "string-similarity": "^4.0.4",
+    "unidecode": "^1.1.0"
+  },
+  "devDependencies": {
+    "@codemirror/autocomplete": "^6.18.0",
+    "@codemirror/commands": "^6.7.0",
+    "@codemirror/language": "^6.10.0",
+    "@codemirror/state": "^6.4.0",
+    "@codemirror/view": "^6.34.0",
+    "@lezer/common": "^1.2.0",
+    "@lezer/highlight": "^1.2.0",
+    "@types/katex": "^0.16.7",
+    "@types/markdown-it": "^13.0.7",
+    "@types/node": "^22.0.0",
+    "@types/string-similarity": "^4.0.2",
+    "esbuild": "^0.27.2",
+    "jszip": "^3.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "dev": "node esbuild.config.mjs --serve",
+    "build": "tsc --noEmit && node esbuild.config.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "esbuild test/port.test.ts --bundle --platform=node --format=cjs --loader:.css=text --outfile=.test-dist/port.test.cjs && node --test .test-dist/port.test.cjs"
+  },
+  "browserslist": "cover 100%,not android < 5"
+}
